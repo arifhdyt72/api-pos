@@ -77,5 +77,5 @@ func main() {
 		apiV1.GET("/payment_method", query.GetPaymentMethod)
 	}
 
-	r.Run("0.0.0.0:8082")
+	r.Run("0.0.0.0:80")
 }
