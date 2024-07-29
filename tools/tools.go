@@ -108,7 +108,7 @@ func SaveImageToDisk(path string, filename string) (string, error) {
 			return "error", err
 		}
 
-		f, err := os.OpenFile(fullname, os.O_WRONLY|os.O_CREATE, 0777)
+		f, err := os.OpenFile("./"+fullname, os.O_WRONLY|os.O_CREATE, 0777)
 		if err != nil {
 			return "error", err
 		}
@@ -120,7 +120,7 @@ func SaveImageToDisk(path string, filename string) (string, error) {
 			return "error", err
 		}
 
-		f, err := os.OpenFile(fullname, os.O_WRONLY|os.O_CREATE, 0777)
+		f, err := os.OpenFile("./"+fullname, os.O_WRONLY|os.O_CREATE, 0777)
 		if err != nil {
 			return "error", err
 		}
